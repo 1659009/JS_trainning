@@ -1,16 +1,9 @@
 body
 {
 	line-height: 30px;
-	margin-left: 10px;
 }
  
-.input
+h1
 {
-	padding-right: 3px;
-}
-
-.textarea
-{
-	height: 100px;
-	width: 200px;
+	text-align: center;
 }

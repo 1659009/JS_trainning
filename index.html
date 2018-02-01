@@ -6,36 +6,35 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>May tinh phan so</title>
 </head>
-<body>
+<body class="container">
 	<script src="js/phanso_script.js" type="text/javascript" charset="utf-8" async defer></script>
 	<h1>Máy tính phân số</h1>
-	<form>
-	  <div class="form-group">
-	    <label>Phân số 1</label>
-		<input type="text" name="input1" id="i1" placeholder="Nhập phân số 1"> (tử số/ mẫu số)  
-	  </div>
-	  <div class="form-group">
-	    <label>Phép tính</label>
-	    <select name="operator" id="ope">
+	 	<div>
+		  	<label>Phân số 1</label> <br>
+			<input type="text" class="form-control" id="i1" placeholder="Nhập phân số 1">
+			<small class="form-text text-muted">(tử số/ mẫu số)</small>  
+	 	 </div>
+	  	<div>
+		    <label>Phép tính</label>
+		    <select name="operator" id="ope" class="form-control">
 				<option value="plus">+</option>
 				<option value="minus">-</option>}
 				<option value="multiply">*</option>}
 				<option value="divide">/</option>}
 			</select>
+	 	 </div>
+	   <div>
+	    <label>Phân số 2</label> 
+		<input type="text" class="form-control" id="i2" placeholder="Nhập phân số 2">
+		<small class="form-text text-muted">(tử số/ mẫu số)</small>  
 	  </div>
-	   <div class="form-group">
-	    <label>Phân số 2</label>
-		<input type="text" name="input2" id="i2" placeholder="Nhập phân số 2"> (tử số/ mẫu số)  
-	  </div>
-	  <div><input type="button" onclick="calculate()" value="Tính toán" ></div>
+	  <div><input type="button" onclick="calculate()" value="Tính toán" class="btn btn-primary"></div>
 	  <br>
-	  <div class="form-group">
+	  <div>
 	    <label>Kết quả</label>
 	    <br>
-	  	<textarea id="rs"></textarea>
+	  	<textarea id="rs" class="form-control"></textarea>
   </div>
-</form>
-
 	<script src="../../js/jquery-3.2.1.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
